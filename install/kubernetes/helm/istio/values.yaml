@@ -15,6 +15,11 @@ global:
   proxy:
     image: proxy
 
+    # Imagev2 is the image used for sidecars with Envoyv2/V1Alpha3+ enabled.
+    # You can customize it with a custom image using additional plugins, different base OS,
+    # debug tools.
+    imagev2: proxyv2
+
   # imagePullPolicy is applied to istio control plane components.
   imagePullPolicy: IfNotPresent
 
